@@ -1,0 +1,42 @@
+def story1():
+  print ("Pick story 1")
+  name = input("What is your name:")
+  car = input("Name your dream car:")
+  city = input("Name your dream city:")
+  state = input("Name your dream state:")
+  print("Your name is (%s). You drive a (%s). Your city is (%s). You live in the state known as (%s)."
+  % (name, car, city, state))
+
+
+def story2():
+  print("Pick story 2")
+  Name = input("what is your name:")
+  Sibling = input("What is your Siblings name:")
+  Color = input("Chose a color:")
+  Food = input("Chose a fast food place:")
+  print("Hi my name is (%s). My siblings name is (%s). My favorite color is (%s). My favorite fast food place is (%s)."
+  % (Name, Sibling, Color, Food))
+
+
+def randomstory():
+  print("Pick random")
+  Height = input("What is your height:")
+  Weight = input("What is your Weight:")
+  Sport = input("Chose a sport:")
+  print("My height is (%s). My weight is (%s). My favorite sport is (%s)."
+  % (Height, Weight, Sport))
+
+def storypicker(storychoice):
+  if storychoice == "1":
+    story1()
+  elif storychoice == "2":
+    story2()
+  elif (storychoice == "r") or (storychoice =="R"): randomstory() 
+
+def main():
+  print("Welcome to madlibz.\nchoose your story: ")
+  storychoice = input("Enter 1, 2, or (R)andom: ")
+  storypicker(storychoice)
+
+if __name__ == "__main__":
+  main()
